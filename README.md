@@ -58,4 +58,5 @@ Para demonstrar um ambiente de desenvolvimento e outro de produção, fiz o segu
 - `git push production gabriel-coruja-stranger-things-frontend:master`
 
 **Development**: Segue o link para o projeto em [desenvolvimento](https://project-stranger-things-1223.herokuapp.com/).
+
 **Production**: Segue o link para o projeto em [produção](https://project-stranger-things-1224.herokuapp.com/).
