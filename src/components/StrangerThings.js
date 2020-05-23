@@ -5,11 +5,12 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 const text = process.env.UPSIDEDOWN;
-const { TIMEOUT, HAWKINGS, UPSIDEDOWN } = process.env;
+const { TIMEOUT, HAWKINGS, UPSIDEDOWN, REACT_APP_HAWKINGS } = process.env;
 console.log('time', TIMEOUT)
 console.log('haw', HAWKINGS)
 console.log('up', UPSIDEDOWN)
 console.log('text', text);
+console.log('react', REACT_APP_HAWKINGS)
 
 const strangerThingsConfig = {
   url: HAWKINGS,
