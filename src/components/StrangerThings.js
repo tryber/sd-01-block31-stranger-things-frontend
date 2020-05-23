@@ -9,7 +9,7 @@ const { TIMEOUT, HAWKINGS, UPSIDEDOWN } = process.env;
 console.log('time', TIMEOUT)
 console.log('haw', HAWKINGS)
 console.log('up', UPSIDEDOWN)
-console.log('text', text)
+console.log('text', text);
 
 const strangerThingsConfig = {
   url: HAWKINGS,
