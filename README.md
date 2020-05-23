@@ -46,5 +46,16 @@ Para tornar a minha a minha aplicação Multi-ambiente, fiz o seguinte procedime
 
 ### 11 - Development Mode
 
-Segue o link para o projeto em desenvolvimento
-Segue o link para o projeto em produção
+Para demonstrar um ambiente de desenvolvimento e outro de produção, fiz o seguinte procedimento:
+
+- `Adicionei uma variável de ambiente na minha aplicação, de maneira que a mesma fique explícita`
+- `heroku config:set REACT_APP_ENV=desenvolvimento --app project-stranger-things-1223`
+- `heroku config:set REACT_APP_ENV=produção --app project-stranger-things-1224`
+
+- `git add .`
+- `git commit -m "Setando variável de ambiente"`
+- `git push development gabriel-coruja-stranger-things-frontend:master`
+- `git push production gabriel-coruja-stranger-things-frontend:master`
+
+**Development**: Segue o link para o projeto em [desenvolvimento](https://project-stranger-things-1223.herokuapp.com/).
+**Production**: Segue o link para o projeto em [produção](https://project-stranger-things-1224.herokuapp.com/).
