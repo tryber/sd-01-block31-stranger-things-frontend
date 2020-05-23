@@ -4,11 +4,12 @@ import CharactersService from '../services/charactersAPI';
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
-
+const text = process.env.UPSIDEDOWN;
 const { TIMEOUT, HAWKINGS, UPSIDEDOWN } = process.env;
 console.log('time', TIMEOUT)
 console.log('haw', HAWKINGS)
 console.log('up', UPSIDEDOWN)
+console.log('text', text)
 
 const strangerThingsConfig = {
   url: HAWKINGS,
