@@ -6,14 +6,17 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 const { TIMEOUT, HAWKINGS, UPSIDEDOWN } = process.env;
+console.log('time', TIMEOUT)
+console.log('haw', HAWKINGS)
+console.log('up', UPSIDEDOWN)
 
 const strangerThingsConfig = {
-  url: String(HAWKINGS),
+  url: HAWKINGS,
   timeout: Number(TIMEOUT),
 };
 
 const upsideDownConfig = {
-  url: String(UPSIDEDOWN),
+  url: UPSIDEDOWN,
   timeout: Number(TIMEOUT),
 };
 
