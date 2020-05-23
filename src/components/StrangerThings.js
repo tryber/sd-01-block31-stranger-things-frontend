@@ -5,16 +5,16 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
-const { TIMEOUT, UPSIDEDOWN } = process.env;
+const { TIMEOUT, HAWKINGS, UPSIDEDOWN } = process.env;
 
 const strangerThingsConfig = {
-  url: process.env.HAWKINGS,
-  timeout: Number(process.env.TIMEOUT),
+  url: String(HAWKINGS),
+  timeout: Number(TIMEOUT),
 };
 
 const upsideDownConfig = {
-  url: process.env.UPSIDEDOWN,
-  timeout: Number(process.env.TIMEOUT),
+  url: String(UPSIDEDOWN),
+  timeout: Number(TIMEOUT),
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
