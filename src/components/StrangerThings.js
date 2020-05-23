@@ -4,22 +4,17 @@ import CharactersService from '../services/charactersAPI';
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
-const text = process.env.UPSIDEDOWN;
-const { TIMEOUT, HAWKINGS, UPSIDEDOWN, REACT_APP_HAWKINGS } = process.env;
-console.log('time', TIMEOUT)
-console.log('haw', HAWKINGS)
-console.log('up', UPSIDEDOWN)
-console.log('text', text);
-console.log('react', REACT_APP_HAWKINGS)
+
+const { REACT_APP_TIMEOUT, REACT_APP_UPSIDEDOWN, REACT_APP_HAWKINGS } = process.env;
 
 const strangerThingsConfig = {
-  url: HAWKINGS,
-  timeout: Number(TIMEOUT),
+  url: REACT_APP_HAWKINGS,
+  timeout: Number(REACT_APP_TIMEOUT),
 };
 
 const upsideDownConfig = {
-  url: UPSIDEDOWN,
-  timeout: Number(TIMEOUT),
+  url: REACT_APP_UPSIDEDOWN,
+  timeout: Number(REACT_APP_TIMEOUT),
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);

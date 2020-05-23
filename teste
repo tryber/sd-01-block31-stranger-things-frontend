@@ -1,7 +1,8 @@
 heroku create --remote stranger-things project-stranger-things-1223 --buildpack mars/create-react-app
 
-heroku config:set HAWKINGS="https://deploy-backend-hawkings-1223.herokuapp.com/" 
-heroku config:set UPSIDEDOWN="https://deploy-backend-upsidedown-1223.herokuapp.com/" TIMEOUT="30000"
+heroku config:set REACT_APP_HAWKINGS="https://deploy-backend-hawkings-1223.herokuapp.com" 
+heroku config:set REACT_APP_UPSIDEDOWN="https://deploy-backend-upsidedown-1223.herokuapp.com" 
+heroku config:set REACT_APP_TIMEOUT="30000"
 --app project-stranger-things-1223
 
 git add .
