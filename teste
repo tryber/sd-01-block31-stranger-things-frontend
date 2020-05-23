@@ -17,3 +17,7 @@ git commit -m "Iniciando novo deploy no projeto frontend"
 
 git push development gabriel-coruja-stranger-things-frontend:master
 git push production gabriel-coruja-stranger-things-frontend:master
+
+heroku config:set REACT_APP_ENV=desenvolvimento --app project-stranger-things-1223
+heroku config:set REACT_APP_ENV=produção --app project-stranger-things-1224
+
