@@ -14,7 +14,11 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu frontend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+`$ heroku create --remote stranger-things strangerthings-frontend --buildpack mars/create-react-app`
+
+`$ heroku config:set HAWKINS_URL="https://deploy-backend-hawkings-1234.herokuapp.com/" --app strangerthings-frontend`
+
+`$ heroku config:set UPSIDEDOWN_URL="https://deploy-backend-upsidedown-1234.herokuapp.com/" --app strangerthings-frontend`
 
 ## Bônus
 
