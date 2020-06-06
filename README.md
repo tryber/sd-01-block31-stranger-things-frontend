@@ -26,7 +26,7 @@ Para realizar o deploy do meu frontend, fiz o seguinte procedimento:
 
 -`git commit -m "deploy frontend"`
 
--`git push stranger-things guiiluiz-stranger-things-frontend:master`
+-`git push strangerthings conradomedeirosdev-sd-01-block31-stranger-things-frontend:master`
 
 ## Bônus
 
