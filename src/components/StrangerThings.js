@@ -5,9 +5,9 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
-const TIMEOUT = process.env.TIMEOUT || 30000;
-const HAWKINS_URL = process.env.HAWKINS_URL || 'http://localhost:3000';
-const UPSIDEDOWN_URL = process.env.UPSIDEDOWN_URL || 'http://localhost:3000';
+const TIMEOUT = process.env.REACT_APP_TIMEOUT || 30000;
+const HAWKINS_URL = process.env.REACT_APP_HAWKINS || 'http://localhost:3000';
+const UPSIDEDOWN_URL = process.env.REACT_APP_UPSIDEDOWN || 'http://localhost:3000';
 
 const strangerThingsConfig = {
   url: HAWKINS_URL,
