@@ -14,7 +14,17 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu frontend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+`heroku create project-stranger-things-doug --buildpack mars/create-react-app`
+
+`heroku config:set REACT_APP_HAWKINGS=https://deploy-backend-hawkings--15.herokuapp.com`
+
+`heroku config:set REACT_APP_UPSIDEDOWN=https://deploy-backend-upsidedown--15.herokuapp.com`
+
+`git add .`
+
+`git commit -m "Iniciando deploy no projeto frontend"`
+
+`git push heroku gabriel-coruja-stranger-things-frontend:master`
 
 ## Bônus
 
